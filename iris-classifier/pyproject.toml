@@ -1,0 +1,21 @@
+[project]
+name = "iris-classifier"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "rg1070",email = "roozbeh.ghasemi@unh.edu"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "pandas (>=2.2.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "iris_classifier", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
